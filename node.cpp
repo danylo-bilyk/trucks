@@ -179,7 +179,7 @@ QString Node::getImageName() {
             break;
 
         case INTERCHANGE:
-            filename = "parking.png";
+            filename = "circle-outline-64.png";
             break;
 
         case MINEDUMP:
