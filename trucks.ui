@@ -282,6 +282,9 @@
               <height>200</height>
              </rect>
             </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
            </widget>
            <widget class="QPushButton" name="pushButton_5">
             <property name="geometry">
@@ -419,6 +422,9 @@
               <width>280</width>
               <height>200</height>
              </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
             </property>
            </widget>
            <widget class="Line" name="line_4">
@@ -915,6 +921,9 @@
             <width>180</width>
             <height>16777215</height>
            </size>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOn</enum>
           </property>
          </widget>
         </item>
