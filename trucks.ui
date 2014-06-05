@@ -981,7 +981,7 @@
    </widget>
    <widget class="QMenu" name="menuModel">
     <property name="title">
-     <string>Model</string>
+     <string>&amp;Модель</string>
     </property>
     <addaction name="actionCalculate_model"/>
     <addaction name="actionCalculate_schedule"/>
@@ -1036,6 +1036,7 @@
    <addaction name="actionPause"/>
    <addaction name="actionStop"/>
    <addaction name="separator"/>
+   <addaction name="actionSettings"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNew">
@@ -1078,6 +1079,10 @@
    </property>
   </action>
   <action name="actionExit">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/actions/system-log-out.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/system-log-out.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Выйти из программы</string>
    </property>
@@ -1185,7 +1190,7 @@
      <normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</iconset>
    </property>
    <property name="text">
-    <string>Calculate model</string>
+    <string>Рассчитать модель</string>
    </property>
   </action>
   <action name="actionCalculate_schedule">
@@ -1194,12 +1199,12 @@
      <normaloff>:/images/Resources/images/time-64.png</normaloff>:/images/Resources/images/time-64.png</iconset>
    </property>
    <property name="text">
-    <string>Calculate schedule</string>
+    <string>Рассчитать расписание</string>
    </property>
   </action>
   <action name="actionUpdate_model">
    <property name="text">
-    <string>Update model</string>
+    <string>Обновить модель</string>
    </property>
   </action>
   <action name="actionPlay">
@@ -1230,6 +1235,10 @@
    </property>
   </action>
   <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/categories/applications-system.png</normaloff>:/icons_actions/images/tango_icons/22x22/categories/applications-system.png</iconset>
+   </property>
    <property name="text">
     <string>Settings...</string>
    </property>

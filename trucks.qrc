@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/Trucks"/>
-    <qresource prefix="/name" lang="en"/>
-    <qresource prefix="/name_ru" lang="ru"/>
+    <qresource lang="en" prefix="/name"/>
+    <qresource lang="ru" prefix="/name_ru"/>
     <qresource prefix="/images">
         <file>Resources/images/dump.png</file>
         <file>Resources/images/truck.png</file>
@@ -84,5 +84,6 @@
         <file>images/tango_icons/22x22/actions/document-open.png</file>
         <file>images/tango_icons/22x22/actions/Makefile.in</file>
         <file>images/tango_icons/22x22/devices/media-floppy.png</file>
+        <file>images/tango_icons/22x22/categories/applications-system.png</file>
     </qresource>
 </RCC>
