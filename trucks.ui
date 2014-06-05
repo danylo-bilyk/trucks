@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Trucks</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="trucks.qrc">
+    <normaloff>:/images/Resources/images/truck.png</normaloff>:/images/Resources/images/truck.png</iconset>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="clientArea">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="mainHorizontalLayout">
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="toolBoxLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <item>
+         <widget class="QToolBox" name="toolBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="modelPage">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>300</width>
+             <height>428</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Модель</string>
+           </attribute>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>280</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Имя модели</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>281</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Модель1</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>110</y>
+              <width>280</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Существующие модели</string>
+            </property>
+           </widget>
+           <widget class="Line" name="line">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>90</y>
+              <width>280</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QListView" name="listView">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>130</y>
+              <width>280</width>
+              <height>200</height>
+             </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>340</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Загрузить</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-open.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-open.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>340</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-delete.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-delete.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>60</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Создать...</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-new.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-new.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>60</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Сохранить</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-save.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-save.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>390</y>
+              <width>280</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Задать маршруты</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/go-next.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/go-next.png</iconset>
+            </property>
+           </widget>
+           <widget class="Line" name="line_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>370</y>
+              <width>280</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="routesPage">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>300</width>
+             <height>428</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Маршруты</string>
+           </attribute>
+           <widget class="QListWidget" name="listWidget">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>280</width>
+              <height>200</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>10</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-remove.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-remove.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Задать</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-add.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-add.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>270</y>
+              <width>280</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Задать ТС</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/go-next.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/go-next.png</iconset>
+            </property>
+           </widget>
+           <widget class="Line" name="line_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>250</y>
+              <width>280</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_15">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>305</y>
+              <width>280</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Обновить модель</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</iconset>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="trucksPage">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>300</width>
+             <height>428</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Транспортные средства</string>
+           </attribute>
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Добавить</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-add.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-add.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>10</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-remove.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-remove.png</iconset>
+            </property>
+           </widget>
+           <widget class="QListWidget" name="listWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>280</width>
+              <height>200</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="Line" name="line_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>330</y>
+              <width>280</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_11">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>350</y>
+              <width>280</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Задать расписание</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/go-next.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/go-next.png</iconset>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="comboBox">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>300</y>
+              <width>280</width>
+              <height>27</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>275</y>
+              <width>280</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Заданный маршрут для выбранного ТС</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_14">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>385</y>
+              <width>280</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Обновить модель</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</iconset>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="schedulePage">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>300</width>
+             <height>428</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Расписание</string>
+           </attribute>
+           <widget class="Line" name="line_5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>200</y>
+              <width>280</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_12">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>220</y>
+              <width>281</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Перейти к симуляции</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/go-next.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/go-next.png</iconset>
+            </property>
+           </widget>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>280</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Рабочий день</string>
+            </property>
+            <widget class="QLabel" name="label_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>30</y>
+               <width>120</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Начало</string>
+             </property>
+            </widget>
+            <widget class="QTimeEdit" name="timeEdit">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>50</y>
+               <width>120</width>
+               <height>27</height>
+              </rect>
+             </property>
+             <property name="time">
+              <time>
+               <hour>8</hour>
+               <minute>0</minute>
+               <second>0</second>
+              </time>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>30</y>
+               <width>120</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Конец</string>
+             </property>
+            </widget>
+            <widget class="QTimeEdit" name="timeEdit_2">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>50</y>
+               <width>118</width>
+               <height>27</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>110</y>
+              <width>280</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Перерыв</string>
+            </property>
+            <widget class="QLabel" name="label_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>30</y>
+               <width>120</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Начало</string>
+             </property>
+            </widget>
+            <widget class="QTimeEdit" name="timeEdit_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>50</y>
+               <width>120</width>
+               <height>27</height>
+              </rect>
+             </property>
+             <property name="time">
+              <time>
+               <hour>8</hour>
+               <minute>0</minute>
+               <second>0</second>
+              </time>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_8">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>30</y>
+               <width>120</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Конец</string>
+             </property>
+            </widget>
+            <widget class="QTimeEdit" name="timeEdit_4">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>50</y>
+               <width>118</width>
+               <height>27</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="pushButton_16">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>255</y>
+              <width>280</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Обновить расписание</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</iconset>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="emulationPage">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>300</width>
+             <height>428</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Симуляция</string>
+           </attribute>
+           <widget class="QPushButton" name="pushButton_17">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>90</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Запуск</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-start.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-start.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_18">
+            <property name="geometry">
+             <rect>
+              <x>105</x>
+              <y>10</y>
+              <width>90</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Пауза</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-pause.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-pause.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_19">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>10</y>
+              <width>90</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Стоп</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-stop.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-stop.png</iconset>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="modelScheduleLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Схема дороги</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="TrucksGraphicView" name="scheme"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="scheduleLayout">
+          <item>
+           <layout class="QVBoxLayout" name="anotherDiagramLayout">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetMinimumSize</enum>
+            </property>
+            <item>
+             <widget class="QLabel" name="anotherDiagramLabel">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Диаграмма №1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGraphicsView" name="graphicsView_3">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="dispatcherDiagramLayout">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetMinimumSize</enum>
+            </property>
+            <item>
+             <widget class="QLabel" name="dispatcherDiagramLabel">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Диспетчерская диарграмма</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGraphicsView" name="graphicsView">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="gantDiagramLayout">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetMinimumSize</enum>
+            </property>
+            <item>
+             <widget class="QLabel" name="gantDiagramLabel">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Диаграмма Ганта</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGraphicsView" name="graphicsView_2">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Свойства</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Properties" name="properties">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>915</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;Файл</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>Схемы &amp;дорог</string>
+    </property>
+    <addaction name="actionActivateSelectMode"/>
+    <addaction name="separator"/>
+    <addaction name="actionActivateAddStorageMode"/>
+    <addaction name="actionActivateAddMineDumpMode"/>
+    <addaction name="actionActivateAddInterchangeMode"/>
+    <addaction name="separator"/>
+    <addaction name="actionActivateAddRoadMode"/>
+    <addaction name="actionActivateAddDoubleRoadMode"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete"/>
+   </widget>
+   <widget class="QMenu" name="menu_Run">
+    <property name="title">
+     <string>&amp;Симуляция</string>
+    </property>
+    <addaction name="actionPlay"/>
+    <addaction name="actionPause"/>
+    <addaction name="actionStop"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Помощь</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;Вид</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+   </widget>
+   <widget class="QMenu" name="menuModel">
+    <property name="title">
+     <string>Model</string>
+    </property>
+    <addaction name="actionCalculate_model"/>
+    <addaction name="actionCalculate_schedule"/>
+    <addaction name="actionUpdate_model"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_View"/>
+   <addaction name="menuModel"/>
+   <addaction name="menu_Run"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ActionsContextMenu</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="separator"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="separator"/>
+   <addaction name="actionActivateSelectMode"/>
+   <addaction name="separator"/>
+   <addaction name="actionActivateAddStorageMode"/>
+   <addaction name="actionActivateAddInterchangeMode"/>
+   <addaction name="actionActivateAddMineDumpMode"/>
+   <addaction name="separator"/>
+   <addaction name="actionActivateAddRoadMode"/>
+   <addaction name="separator"/>
+   <addaction name="actionCalculate_model"/>
+   <addaction name="actionCalculate_schedule"/>
+   <addaction name="separator"/>
+   <addaction name="actionPlay"/>
+   <addaction name="actionPause"/>
+   <addaction name="actionStop"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-new.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Новый файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-open.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/document-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Отрыть файл</string>
+   </property>
+   <property name="toolTip">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/devices/media-floppy.png</normaloff>:/icons_actions/images/tango_icons/22x22/devices/media-floppy.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Сохранить файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>&amp;Выйти из программы</string>
+   </property>
+  </action>
+  <action name="actionActivateAddStorageMode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/images/Resources/images/dump.png</normaloff>:/images/Resources/images/dump.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить &amp;хранилище</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="actionActivateAddRoadMode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/images/images/imagefiles-winding-_road.png</normaloff>:/images/images/imagefiles-winding-_road.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить &amp;дорогу</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+  <action name="actionActivateSelectMode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-find-replace.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-find-replace.png</iconset>
+   </property>
+   <property name="text">
+    <string>Перейти в режим выбора</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionActivateAddMineDumpMode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/images/Resources/images/mine.png</normaloff>:/images/Resources/images/mine.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить отвал &amp;отвал</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+  <action name="actionActivateAddInterchangeMode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/images/Resources/images/circle-outline-64.png</normaloff>:/images/Resources/images/circle-outline-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить &amp;перекрёсток</string>
+   </property>
+   <property name="shortcut">
+    <string>I</string>
+   </property>
+  </action>
+  <action name="actionActivateAddDoubleRoadMode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Добавить дорогу двойную</string>
+   </property>
+   <property name="shortcut">
+    <string>O</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Удалить выбранный элемент</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionCalculate_model">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calculate model</string>
+   </property>
+  </action>
+  <action name="actionCalculate_schedule">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/images/Resources/images/time-64.png</normaloff>:/images/Resources/images/time-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calculate schedule</string>
+   </property>
+  </action>
+  <action name="actionUpdate_model">
+   <property name="text">
+    <string>Update model</string>
+   </property>
+  </action>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-start.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-start.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-pause.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="trucks.qrc">
+     <normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-stop.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/media-playback-stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TrucksGraphicView</class>
+   <extends>QGraphicsView</extends>
+   <header>view.h</header>
+   <slots>
+    <signal>selectModeToggled(bool)</signal>
+    <signal>storageAddModeToggled(bool)</signal>
+    <signal>roadAddModeToggled(bool)</signal>
+    <signal>interchangeAddModeToggled(bool)</signal>
+    <signal>mineDumpAddModeToggled(bool)</signal>
+    <signal>doubleRoadAddModeToggled(bool)</signal>
+    <signal>selectionChanged(QAbstractItemModel*)</signal>
+    <slot>toggleSelectMode(bool)</slot>
+    <slot>toggleStorageAddMode(bool)</slot>
+    <slot>toggleMineDumpAddMode(bool)</slot>
+    <slot>toggleInterchangeAddMode(bool)</slot>
+    <slot>toggleRoadAddMode(bool)</slot>
+    <slot>toggleDoubleRoadAddMode(bool)</slot>
+    <slot>triggerClearScene()</slot>
+    <slot>triggerDeleteSelection()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>Properties</class>
+   <extends>QTableView</extends>
+   <header>properties.h</header>
+   <slots>
+    <slot>updateModel(QAbstractItemModel*)</slot>
+    <slot>updated()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="trucks.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>scheme</sender>
+   <signal>roadAddModeToggled(bool)</signal>
+   <receiver>actionActivateAddRoadMode</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scheme</sender>
+   <signal>storageAddModeToggled(bool)</signal>
+   <receiver>actionActivateAddStorageMode</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scheme</sender>
+   <signal>selectModeToggled(bool)</signal>
+   <receiver>actionActivateSelectMode</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionActivateAddRoadMode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scheme</receiver>
+   <slot>toggleRoadAddMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionActivateAddStorageMode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scheme</receiver>
+   <slot>toggleStorageAddMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionActivateSelectMode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scheme</receiver>
+   <slot>toggleSelectMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNew</sender>
+   <signal>triggered()</signal>
+   <receiver>scheme</receiver>
+   <slot>triggerClearScene()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionActivateAddInterchangeMode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scheme</receiver>
+   <slot>toggleInterchangeAddMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionActivateAddMineDumpMode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scheme</receiver>
+   <slot>toggleMineDumpAddMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionActivateAddDoubleRoadMode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scheme</receiver>
+   <slot>toggleDoubleRoadAddMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scheme</sender>
+   <signal>doubleRoadAddModeToggled(bool)</signal>
+   <receiver>actionActivateAddDoubleRoadMode</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scheme</sender>
+   <signal>mineDumpAddModeToggled(bool)</signal>
+   <receiver>actionActivateAddMineDumpMode</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scheme</sender>
+   <signal>interchangeAddModeToggled(bool)</signal>
+   <receiver>actionActivateAddInterchangeMode</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDelete</sender>
+   <signal>triggered()</signal>
+   <receiver>scheme</receiver>
+   <slot>triggerDeleteSelection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scheme</sender>
+   <signal>selectionChanged(QAbstractTableModel*)</signal>
+   <receiver>properties</receiver>
+   <slot>updateModel(QAbstractTableModel*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>246</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>640</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
