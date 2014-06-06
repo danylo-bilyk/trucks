@@ -83,7 +83,7 @@
            </size>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>8</number>
           </property>
           <widget class="QWidget" name="modelPage">
            <property name="geometry">
@@ -443,6 +443,14 @@
            </widget>
           </widget>
           <widget class="QWidget" name="routesPage">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>320</width>
+             <height>568</height>
+            </rect>
+           </property>
            <attribute name="label">
             <string>Редагування маршруту</string>
            </attribute>
@@ -1551,6 +1559,14 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>320</width>
+             <height>568</height>
+            </rect>
+           </property>
            <attribute name="label">
             <string>Контроль розвантаження</string>
            </attribute>
@@ -1727,6 +1743,14 @@
            <zorder>label_14</zorder>
           </widget>
           <widget class="QWidget" name="page_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>320</width>
+             <height>568</height>
+            </rect>
+           </property>
            <attribute name="label">
             <string>Контроль  навантаження</string>
            </attribute>
@@ -1893,6 +1917,14 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>320</width>
+             <height>568</height>
+            </rect>
+           </property>
            <attribute name="label">
             <string>Контроль ТЗ</string>
            </attribute>
@@ -2304,7 +2336,7 @@
         <item>
          <widget class="QLabel" name="label_4">
           <property name="text">
-           <string>Схема дороги</string>
+           <string>Схема доріг</string>
           </property>
          </widget>
         </item>
@@ -2333,7 +2365,7 @@
                </size>
               </property>
               <property name="text">
-               <string>Диаграмма №1</string>
+               <string>Розклад руху</string>
               </property>
              </widget>
             </item>
@@ -2341,14 +2373,14 @@
              <widget class="QGraphicsView" name="graphicsView_3">
               <property name="minimumSize">
                <size>
-                <width>0</width>
+                <width>300</width>
                 <height>100</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>16777215</width>
-                <height>200</height>
+                <width>300</width>
+                <height>400</height>
                </size>
               </property>
              </widget>
@@ -2375,7 +2407,7 @@
                </size>
               </property>
               <property name="text">
-               <string>Диспетчерская диарграмма</string>
+               <string>Диспетчерський графік роботи</string>
               </property>
              </widget>
             </item>
@@ -2384,7 +2416,7 @@
               <property name="maximumSize">
                <size>
                 <width>16777215</width>
-                <height>200</height>
+                <height>400</height>
                </size>
               </property>
              </widget>
@@ -2411,7 +2443,7 @@
                </size>
               </property>
               <property name="text">
-               <string>Диаграмма Ганта</string>
+               <string>Діаграмма Ганта</string>
               </property>
              </widget>
             </item>
@@ -2420,7 +2452,7 @@
               <property name="maximumSize">
                <size>
                 <width>16777215</width>
-                <height>200</height>
+                <height>400</height>
                </size>
               </property>
              </widget>
@@ -2508,7 +2540,7 @@
    </widget>
    <widget class="QMenu" name="menu_Run">
     <property name="title">
-     <string>&amp;Симуляция</string>
+     <string>&amp;Симуляція</string>
     </property>
     <addaction name="actionPlay"/>
     <addaction name="actionPause"/>
@@ -2516,7 +2548,7 @@
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
-     <string>&amp;Помощь</string>
+     <string>Допомога</string>
     </property>
    </widget>
    <widget class="QMenu" name="menu_View">
