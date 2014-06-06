@@ -10,6 +10,22 @@ class Trucks : public QMainWindow {
     public:
         Trucks(QWidget *parent = 0);
         ~   Trucks();
+
+        void showEvent(QShowEvent *e)
+        {
+            QMainWindow::showEvent(e);
+            static bool firstStart = true;
+            if (firstStart)
+            {
+                emit startJob();
+                firstStart = false;
+            }
+        }
+
+    Q_SIGNALS:
+
+        void    startJob();
+
     private:
         Ui::MainWindow ui;
 };
