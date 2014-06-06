@@ -1,2 +1,4 @@
 *.ui~
+*.pro.user
+*.pro.user.*
 
