@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>915</width>
-    <height>700</height>
+    <width>989</width>
+    <height>964</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -72,26 +72,26 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>300</width>
+            <width>320</width>
             <height>0</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>300</width>
+            <width>320</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="modelPage">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>300</width>
-             <height>428</height>
+             <width>320</width>
+             <height>568</height>
             </rect>
            </property>
            <attribute name="label">
@@ -120,7 +120,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Модель1</string>
+             <string>Модель 1</string>
             </property>
            </widget>
            <widget class="QLabel" name="label_2">
@@ -133,7 +133,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Существующие модели</string>
+             <string>Існуючи моделі:</string>
             </property>
            </widget>
            <widget class="Line" name="line">
@@ -155,7 +155,7 @@
               <x>10</x>
               <y>130</y>
               <width>280</width>
-              <height>200</height>
+              <height>141</height>
              </rect>
             </property>
             <property name="verticalScrollBarPolicy">
@@ -166,13 +166,13 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>340</y>
+              <y>290</y>
               <width>120</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Загрузить</string>
+             <string>Завантажити</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -183,13 +183,13 @@
             <property name="geometry">
              <rect>
               <x>170</x>
-              <y>340</y>
+              <y>290</y>
               <width>120</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Удалить</string>
+             <string>Видалити</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -206,7 +206,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Создать...</string>
+             <string>Створити</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -223,7 +223,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Сохранить</string>
+             <string>Запам'ятати</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -234,13 +234,13 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>390</y>
+              <y>340</y>
               <width>280</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Задать маршруты</string>
+             <string>Перейти до редагування маршрутів</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -251,7 +251,7 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>370</y>
+              <y>320</y>
               <width>280</width>
               <height>20</height>
              </rect>
@@ -261,17 +261,17 @@
             </property>
            </widget>
           </widget>
-          <widget class="QWidget" name="routesPage">
+          <widget class="QWidget" name="settingsPage">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>300</width>
-             <height>428</height>
+             <width>320</width>
+             <height>568</height>
             </rect>
            </property>
            <attribute name="label">
-            <string>Маршруты</string>
+            <string>Налаштування</string>
            </attribute>
            <widget class="QListWidget" name="listWidget">
             <property name="geometry">
@@ -279,7 +279,7 @@
               <x>10</x>
               <y>50</y>
               <width>280</width>
-              <height>200</height>
+              <height>101</height>
              </rect>
             </property>
             <property name="verticalScrollBarPolicy">
@@ -289,14 +289,14 @@
            <widget class="QPushButton" name="pushButton_5">
             <property name="geometry">
              <rect>
-              <x>170</x>
-              <y>10</y>
-              <width>120</width>
+              <x>10</x>
+              <y>160</y>
+              <width>280</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Удалить</string>
+             <string>Видалити обранні маршрути</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -308,12 +308,12 @@
              <rect>
               <x>10</x>
               <y>10</y>
-              <width>120</width>
+              <width>280</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Задать</string>
+             <string>Створити новий маршрут ...</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -324,13 +324,13 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>270</y>
+              <y>240</y>
               <width>280</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Задать ТС</string>
+             <string>Перейти до редагування ТЗ</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -341,7 +341,7 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>250</y>
+              <y>220</y>
               <width>280</width>
               <height>20</height>
              </rect>
@@ -354,17 +354,478 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>305</y>
+              <y>275</y>
               <width>280</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Обновить модель</string>
+             <string>Розрахувати модель</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
               <normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</iconset>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>60</y>
+              <width>250</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>1: пр1-м4-м1-пн1-м1-м2-м4-пр1</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_8">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>250</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>2: пр1-м4-м2-пн2-м2-м1-м4-пр1</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_9">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>120</y>
+              <width>250</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>3: пр1-м4-м3-пн3-м3-м2-м4-пр1</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_39">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>200</y>
+              <width>221</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Загальна кількість маршрутів:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_40">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>200</y>
+              <width>51</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>3</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="routesPage">
+           <attribute name="label">
+            <string>Редагування маршруту</string>
+           </attribute>
+           <widget class="QListWidget" name="listWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>60</y>
+              <width>280</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+            <item>
+             <property name="text">
+              <string>ПН2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>M1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>M4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ПР1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ПР2</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QComboBox" name="comboBox_5">
+            <property name="geometry">
+             <rect>
+              <x>89</x>
+              <y>7</y>
+              <width>211</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <property name="currentText">
+             <string>1: пр1-м4-м1-пн1-</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>1: пр1-м4-м1-пн1-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLabel" name="label_33">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>70</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>маршрут</string>
+            </property>
+           </widget>
+           <widget class="QListWidget" name="listWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>190</y>
+              <width>280</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+            <item>
+             <property name="text">
+              <string>ПР1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>M4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>M1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ПН1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>M1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>M4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ПР1</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="pushButton_13">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>150</y>
+              <width>121</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Додати</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-add.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-add.png</iconset>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_34">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>40</y>
+              <width>280</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>доступні пункти призначення:</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_20">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>150</y>
+              <width>121</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Видалити</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-remove.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-remove.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_21">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>280</y>
+              <width>281</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Очистити маршрут</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-clear.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-clear.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_22">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>320</y>
+              <width>281</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Створити повернення на початок</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-undo.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-undo.png</iconset>
+            </property>
+           </widget>
+           <widget class="Line" name="line_6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>350</y>
+              <width>280</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_27">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>400</y>
+              <width>120</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Кінец</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_28">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>400</y>
+              <width>120</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Початок</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="comboBox_6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>420</y>
+              <width>111</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <property name="currentText">
+             <string>ПР1</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>ПР1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ПР2</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QComboBox" name="comboBox_7">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>420</y>
+              <width>111</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <property name="currentText">
+             <string>ПН1</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>ПН1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ПН2</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="pushButton_23">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>370</y>
+              <width>281</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Згенерувати автоматично</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-find-replace.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/edit-find-replace.png</iconset>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_27">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>450</y>
+              <width>281</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>круїз (поїздка туди і назад)</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="Line" name="line_7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>470</y>
+              <width>280</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_24">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>530</y>
+              <width>281</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Відмінити редагування</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/actions/process-stop.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/process-stop.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_25">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>490</y>
+              <width>281</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Закінчити редагування</string>
+            </property>
+            <property name="icon">
+             <iconset resource="trucks.qrc">
+              <normaloff>:/icons_actions/images/tango_icons/22x22/devices/media-floppy.png</normaloff>:/icons_actions/images/tango_icons/22x22/devices/media-floppy.png</iconset>
             </property>
            </widget>
           </widget>
@@ -373,24 +834,24 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>300</width>
-             <height>428</height>
+             <width>320</width>
+             <height>568</height>
             </rect>
            </property>
            <attribute name="label">
-            <string>Транспортные средства</string>
+            <string>Транспортні засоби</string>
            </attribute>
            <widget class="QPushButton" name="pushButton_9">
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>10</y>
+              <y>40</y>
               <width>120</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Добавить</string>
+             <string>Добавити ТЗ</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -400,31 +861,18 @@
            <widget class="QPushButton" name="pushButton_10">
             <property name="geometry">
              <rect>
-              <x>170</x>
-              <y>10</y>
-              <width>120</width>
+              <x>10</x>
+              <y>180</y>
+              <width>280</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Удалить</string>
+             <string>Видалити обранні ТЗ</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
               <normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-remove.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/list-remove.png</iconset>
-            </property>
-           </widget>
-           <widget class="QListWidget" name="listWidget_2">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>50</y>
-              <width>280</width>
-              <height>200</height>
-             </rect>
-            </property>
-            <property name="verticalScrollBarPolicy">
-             <enum>Qt::ScrollBarAlwaysOn</enum>
             </property>
            </widget>
            <widget class="Line" name="line_4">
@@ -450,7 +898,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Задать расписание</string>
+             <string>Перейти до редагування розкладу</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -460,24 +908,48 @@
            <widget class="QComboBox" name="comboBox">
             <property name="geometry">
              <rect>
-              <x>10</x>
-              <y>300</y>
-              <width>280</width>
+              <x>79</x>
+              <y>247</y>
+              <width>211</width>
               <height>27</height>
              </rect>
             </property>
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <property name="currentText">
+             <string>1: пр1-м4-м1-пн1-м1-м2-м4-пр1</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>1: пр1-м4-м1-пн1-м1-м2-м4-пр1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2: пр1-м4-м2-пн2-м2-м1-м4-пр1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>3: пр1-м4-м3-пн3-м3-м2-м4-пр1</string>
+             </property>
+            </item>
            </widget>
            <widget class="QLabel" name="label_9">
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>275</y>
-              <width>280</width>
+              <y>227</y>
+              <width>241</width>
               <height>17</height>
              </rect>
             </property>
             <property name="text">
-             <string>Заданный маршрут для выбранного ТС</string>
+             <string>Використовувати для oбраних ТЗ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignJustify|Qt::AlignVCenter</set>
             </property>
            </widget>
            <widget class="QPushButton" name="pushButton_14">
@@ -490,31 +962,280 @@
              </rect>
             </property>
             <property name="text">
-             <string>Обновить модель</string>
+             <string>Розрахувати модель</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
               <normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</iconset>
             </property>
            </widget>
+           <widget class="QCheckBox" name="checkBox_19">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 1</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_20">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>90</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 4</string>
+            </property>
+           </widget>
+           <widget class="QListView" name="listView_7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>80</y>
+              <width>280</width>
+              <height>90</height>
+             </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_21">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>115</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 5</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_22">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 3</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_23">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>115</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 2</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_24">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>140</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 6</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_29">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>250</y>
+              <width>70</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>маршрут</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spinBox_13">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>40</y>
+              <width>50</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>6</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_30">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>40</y>
+              <width>70</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>кількість:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_31">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>280</y>
+              <width>191</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Обрано ТЗ на маршрута 1:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_32">
+            <property name="geometry">
+             <rect>
+              <x>199</x>
+              <y>280</y>
+              <width>81</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>2</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_35">
+            <property name="geometry">
+             <rect>
+              <x>199</x>
+              <y>310</y>
+              <width>81</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>6</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_36">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>310</y>
+              <width>191</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Загальна кількість ТЗ:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_37">
+            <property name="geometry">
+             <rect>
+              <x>229</x>
+              <y>10</y>
+              <width>51</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>3</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_38">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>221</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Загальна кількість маршрутів:</string>
+            </property>
+           </widget>
+           <zorder>listView_7</zorder>
+           <zorder>pushButton_9</zorder>
+           <zorder>pushButton_10</zorder>
+           <zorder>line_4</zorder>
+           <zorder>pushButton_11</zorder>
+           <zorder>comboBox</zorder>
+           <zorder>label_9</zorder>
+           <zorder>pushButton_14</zorder>
+           <zorder>checkBox_19</zorder>
+           <zorder>checkBox_20</zorder>
+           <zorder>checkBox_21</zorder>
+           <zorder>checkBox_22</zorder>
+           <zorder>checkBox_23</zorder>
+           <zorder>checkBox_24</zorder>
+           <zorder>label_29</zorder>
+           <zorder>spinBox_13</zorder>
+           <zorder>label_30</zorder>
+           <zorder>label_31</zorder>
+           <zorder>label_32</zorder>
+           <zorder>label_35</zorder>
+           <zorder>label_36</zorder>
+           <zorder>label_37</zorder>
+           <zorder>label_38</zorder>
           </widget>
           <widget class="QWidget" name="schedulePage">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>300</width>
-             <height>428</height>
+             <width>320</width>
+             <height>568</height>
             </rect>
            </property>
            <attribute name="label">
-            <string>Расписание</string>
+            <string>Розклад</string>
            </attribute>
            <widget class="Line" name="line_5">
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>200</y>
+              <y>330</y>
               <width>280</width>
               <height>20</height>
              </rect>
@@ -527,13 +1248,13 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>220</y>
+              <y>350</y>
               <width>281</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Перейти к симуляции</string>
+             <string>Перейти до симуляції</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -544,13 +1265,13 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>10</y>
+              <y>130</y>
               <width>280</width>
-              <height>91</height>
+              <height>81</height>
              </rect>
             </property>
             <property name="title">
-             <string>Рабочий день</string>
+             <string>Рoбочий день</string>
             </property>
             <widget class="QLabel" name="label_5">
              <property name="geometry">
@@ -562,7 +1283,7 @@
               </rect>
              </property>
              <property name="text">
-              <string>Начало</string>
+              <string>Початок</string>
              </property>
             </widget>
             <widget class="QTimeEdit" name="timeEdit">
@@ -570,13 +1291,16 @@
               <rect>
                <x>10</x>
                <y>50</y>
-               <width>120</width>
+               <width>100</width>
                <height>27</height>
               </rect>
              </property>
+             <property name="displayFormat">
+              <string>HH:mm</string>
+             </property>
              <property name="time">
               <time>
-               <hour>8</hour>
+               <hour>0</hour>
                <minute>0</minute>
                <second>0</second>
               </time>
@@ -592,7 +1316,7 @@
               </rect>
              </property>
              <property name="text">
-              <string>Конец</string>
+              <string>Кінец</string>
              </property>
             </widget>
             <widget class="QTimeEdit" name="timeEdit_2">
@@ -600,9 +1324,19 @@
               <rect>
                <x>150</x>
                <y>50</y>
-               <width>118</width>
+               <width>100</width>
                <height>27</height>
               </rect>
+             </property>
+             <property name="displayFormat">
+              <string>HH:mm</string>
+             </property>
+             <property name="time">
+              <time>
+               <hour>17</hour>
+               <minute>0</minute>
+               <second>0</second>
+              </time>
              </property>
             </widget>
            </widget>
@@ -610,13 +1344,13 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>110</y>
+              <y>230</y>
               <width>280</width>
-              <height>91</height>
+              <height>81</height>
              </rect>
             </property>
             <property name="title">
-             <string>Перерыв</string>
+             <string>Перерва</string>
             </property>
             <widget class="QLabel" name="label_7">
              <property name="geometry">
@@ -628,7 +1362,7 @@
               </rect>
              </property>
              <property name="text">
-              <string>Начало</string>
+              <string>Початок</string>
              </property>
             </widget>
             <widget class="QTimeEdit" name="timeEdit_3">
@@ -636,13 +1370,16 @@
               <rect>
                <x>10</x>
                <y>50</y>
-               <width>120</width>
+               <width>100</width>
                <height>27</height>
               </rect>
              </property>
+             <property name="displayFormat">
+              <string>HH:mm</string>
+             </property>
              <property name="time">
               <time>
-               <hour>8</hour>
+               <hour>12</hour>
                <minute>0</minute>
                <second>0</second>
               </time>
@@ -658,7 +1395,7 @@
               </rect>
              </property>
              <property name="text">
-              <string>Конец</string>
+              <string>Кінец</string>
              </property>
             </widget>
             <widget class="QTimeEdit" name="timeEdit_4">
@@ -666,9 +1403,19 @@
               <rect>
                <x>150</x>
                <y>50</y>
-               <width>118</width>
+               <width>100</width>
                <height>27</height>
               </rect>
+             </property>
+             <property name="displayFormat">
+              <string>HH:mm</string>
+             </property>
+             <property name="time">
+              <time>
+               <hour>13</hour>
+               <minute>0</minute>
+               <second>0</second>
+              </time>
              </property>
             </widget>
            </widget>
@@ -676,17 +1423,808 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>255</y>
+              <y>385</y>
               <width>280</width>
               <height>30</height>
              </rect>
             </property>
             <property name="text">
-             <string>Обновить расписание</string>
+             <string>Корегування розкладу</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
               <normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</normaloff>:/icons_actions/images/tango_icons/22x22/actions/view-refresh.png</iconset>
+            </property>
+           </widget>
+           <widget class="QListView" name="listView_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>35</y>
+              <width>280</width>
+              <height>85</height>
+             </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>40</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 1</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>65</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 2</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 3</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_4">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>90</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 6</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_5">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>65</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 5</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_6">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>40</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 4</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>151</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Транспортні засоби:</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page">
+           <attribute name="label">
+            <string>Контроль розвантаження</string>
+           </attribute>
+           <widget class="QLabel" name="label_11">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>280</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Пункт розвантаження</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>280</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>ПР1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ПР2</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_11">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>75</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ПР1</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QListView" name="listView_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>70</y>
+              <width>280</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_12">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>100</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ПР2</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_12">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>170</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Прийом вантажу</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_13">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>246</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>фактичний:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>199</y>
+              <width>113</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>0.0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_3">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>240</y>
+              <width>113</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>0.0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_14">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>206</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>запланованний:</string>
+            </property>
+           </widget>
+           <zorder>listView_3</zorder>
+           <zorder>label_11</zorder>
+           <zorder>comboBox_2</zorder>
+           <zorder>checkBox_11</zorder>
+           <zorder>checkBox_12</zorder>
+           <zorder>label_12</zorder>
+           <zorder>label_13</zorder>
+           <zorder>lineEdit_2</zorder>
+           <zorder>lineEdit_3</zorder>
+           <zorder>label_14</zorder>
+          </widget>
+          <widget class="QWidget" name="page_2">
+           <attribute name="label">
+            <string>Контроль  навантаження</string>
+           </attribute>
+           <widget class="QListView" name="listView_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>60</y>
+              <width>280</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_4">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>189</y>
+              <width>113</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>0.0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_15">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>236</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>фактичний:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_16">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>196</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>запланованний:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_5">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>230</y>
+              <width>113</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>0.0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="comboBox_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>280</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>ПН1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ПН2</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLabel" name="label_17">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>160</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Видобуток</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_18">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>280</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Пункт навантаження:</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_13">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>65</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ПН1</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_14">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ПН2</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_3">
+           <attribute name="label">
+            <string>Контроль ТЗ</string>
+           </attribute>
+           <widget class="QLineEdit" name="lineEdit_6">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>259</y>
+              <width>113</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>00:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_15">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ПН2</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QListView" name="listView_5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>60</y>
+              <width>280</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_19">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>280</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Транспортний засоб:</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="comboBox_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>280</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="currentText">
+             <string>Самоскид №1 (БелАЗ#####)</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Самоскид №1 (БелАЗ#####)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Самоскид №2 (БелАЗ#####)</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLabel" name="label_20">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>160</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Місцезнаходження</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_21">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>266</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>за роскладом:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_22">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>306</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>фактично:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_7">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>300</y>
+              <width>113</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>00:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_10">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>95</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 5</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_16">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>120</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 3</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_17">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 1</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_18">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>70</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 4</string>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_25">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>95</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 2</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QCheckBox" name="checkBox_26">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>120</y>
+              <width>120</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Самоскид 6</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_8">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>338</y>
+              <width>113</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>00:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_23">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>344</y>
+              <width>141</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>відставання:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_24">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>387</y>
+              <width>281</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Обсяг перевезеної породи % від плану</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_9">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>410</y>
+              <width>113</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>0.0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_25">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>190</y>
+              <width>171</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>рухаеться маршрутом:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_26">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>210</y>
+              <width>271</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>1: пр1-м4-м1-пн1-м1-м2-м4-пр1</string>
             </property>
            </widget>
           </widget>
@@ -695,12 +2233,12 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>300</width>
-             <height>428</height>
+             <width>320</width>
+             <height>568</height>
             </rect>
            </property>
            <attribute name="label">
-            <string>Симуляция</string>
+            <string>Симуляція</string>
            </attribute>
            <widget class="QPushButton" name="pushButton_17">
             <property name="geometry">
@@ -712,7 +2250,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Запуск</string>
+             <string>Почати</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -746,7 +2284,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Стоп</string>
+             <string>Зупинити</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
@@ -894,7 +2432,7 @@
        </layout>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout">
+       <layout class="QVBoxLayout" name="propertiesVerticalLayout">
         <property name="spacing">
          <number>5</number>
         </property>
@@ -938,7 +2476,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>915</width>
+     <width>989</width>
      <height>25</height>
     </rect>
    </property>
@@ -955,7 +2493,7 @@
    </widget>
    <widget class="QMenu" name="menu_Edit">
     <property name="title">
-     <string>Схемы &amp;дорог</string>
+     <string>Схеми &amp;доріг</string>
     </property>
     <addaction name="actionActivateSelectMode"/>
     <addaction name="separator"/>
