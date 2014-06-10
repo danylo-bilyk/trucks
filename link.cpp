@@ -22,7 +22,7 @@ Link::~Link() {
     delete pen;
 }
 
-void Link::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
+void Link::paint(QPainter *painter, const QStyleOptionGraphicsItem */*option*/, QWidget */*widget*/) {
     painter->setRenderHint(QPainter::HighQualityAntialiasing, true);
 
     if (isSelected()) {
