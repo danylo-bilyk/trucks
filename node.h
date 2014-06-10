@@ -14,7 +14,7 @@ class TruckBoxDelegate : public QItemDelegate {
     public:
         TruckBoxDelegate(QObject *parent = 0);
 
-        QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const;
+        QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &) const;
 
         void    setEditorData(QWidget *editor, const QModelIndex &index) const;
         void    setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const;
@@ -42,11 +42,7 @@ class NodeModel : public QAbstractTableModel {
         NodeType            type;
         size_t              trucks;
 
-        static const int    Custom_Item_Role = Qt::UserRole + 1;
-
-        static const int    getItemRole() {
-            return Custom_Item_Role;
-        }
+        static const int    Custom_Item_Role;// = Qt::UserRole + 1;
 };
 
 class Node : public QGraphicsPixmapItem {
@@ -105,8 +101,6 @@ class Node : public QGraphicsPixmapItem {
 
         NodeType    type;
 
-        #pragma region Graphics elements
-
     protected:
         // Distances
         static const size_t             radius = diameter / 2;
@@ -159,7 +153,6 @@ class Node : public QGraphicsPixmapItem {
 
         static QPointF                  centerOffset;
 
-        #pragma endregion
 };
 }
 

@@ -142,6 +142,10 @@ void TrucksGraphicView::mouseReleaseEvent(QMouseEvent *event) {
             }
 
             break;
+
+        default: {
+            qDebug() << "WARNING" << __FILE__ << __LINE__ << endl;
+        }
     }
 
     QGraphicsView::mouseReleaseEvent(event);

@@ -14,7 +14,7 @@ QPointF Node::      centerOffset(Node::radius, Node::radius);
 
 const QColor Node:: hoverFgBrushColor = QColor(128, 128, 255, 128);
 
-Node::Node(NodeType nodeType) : QGraphicsPixmapItem(), type(nodeType), is_hovered(false) {
+Node::Node(NodeType nodeType) : QGraphicsPixmapItem(), is_hovered(false), type(nodeType) {
     myModel = new NodeModel(0);
     stringList.append("TEST1");
     stringList.append("TEST2");
@@ -258,6 +258,9 @@ void Node::unbind(LinkPtr link) {
 }
 
 //////////////////////////////////////////////////////////////////////////
+
+const int NodeModel::Custom_Item_Role  = Qt::UserRole + 1;
+
 NodeModel::NodeModel(QObject *parent) : QAbstractTableModel(parent)
 { }
 
@@ -337,7 +340,7 @@ QMap<int, QVariant> NodeModel::itemData(const QModelIndex &index) const {
     //{ result.insert((*it).role, (*it).value); }
     //return result;
     QMap<int, QVariant> m = QAbstractItemModel::itemData(index);
-    m[NodeModel::getItemRole()] = data(index, NodeModel::getItemRole());
+    m[NodeModel::Custom_Item_Role] = data(index, NodeModel::Custom_Item_Role);
     return (m);
 }
 
@@ -345,8 +348,7 @@ QMap<int, QVariant> NodeModel::itemData(const QModelIndex &index) const {
 TruckBoxDelegate::TruckBoxDelegate(QObject *parent /*= 0*/ ) : QItemDelegate(parent)
 { }
 
-QWidget *TruckBoxDelegate::createEditor(QWidget *parent, const QStyleOptionViewItem &option,
-                                        const QModelIndex &index) const {
+QWidget *TruckBoxDelegate::createEditor(QWidget *parent, const QStyleOptionViewItem &/*option*/, const QModelIndex &/*index*/) const {
     QSpinBox    *editor = new QSpinBox(parent);
     editor->setMinimum(0);
     editor->setMaximum(100);
@@ -369,8 +371,8 @@ void TruckBoxDelegate::setModelData(QWidget *editor, QAbstractItemModel *model, 
     model->setData(index, value, Qt::EditRole);
 }
 
-void TruckBoxDelegate::updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &option,
-        const QModelIndex &index) const {
+void TruckBoxDelegate::updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &option, const QModelIndex &/*index*/) const {
     editor->setGeometry(option.rect);
 }
+
 }
