@@ -185,7 +185,7 @@ void TrucksGraphicView::initScene() {
     scene->setSceneRect(0, 0, width(), height());
 
     NodePtr pr1 = scene->createNode(QPointF(250, 0), STORAGE);
-    NodePtr pr2 = scene->createNode(QPointF(250, 150), STORAGE);
+    NodePtr pr2 = scene->createNode(QPointF(250, 150), MINEDUMP);
     NodePtr m1 = scene->createNode(QPointF(-50, -150), INTERCHANGE);
     NodePtr m2 = scene->createNode(QPointF(-50, 0), INTERCHANGE);
     NodePtr m3 = scene->createNode(QPointF(100, 150), INTERCHANGE);
@@ -200,6 +200,7 @@ void TrucksGraphicView::initScene() {
     scene->createLink(m1, m2);
     scene->createLink(m2, m4);
     scene->createLink(m2, m3);
+    scene->createLink(m4, m3);
     scene->createLink(m4, pr1);
     scene->createLink(m3, pr2);
 }
