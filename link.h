@@ -8,7 +8,9 @@ namespace   my {
 class Link : public QGraphicsLineItem {
 
     public:
-        Link(NodePtr, NodePtr);
+        typedef enum {SINGLE, DOUBLE} LinkType;
+
+        Link(NodePtr, NodePtr, LinkType linkType = SINGLE);
         ~       Link();
 
         void    setBegin(NodePtr node, bool create = true);

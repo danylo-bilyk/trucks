@@ -3,7 +3,7 @@
 #include "link.h"
 
 namespace   my {
-Link::Link(Node *node1, Node *node2) : QGraphicsLineItem(), from(node1), to(node2), draft(true) {
+Link::Link(Node *node1, Node *node2, LinkType /*linkType*/) : QGraphicsLineItem(), from(node1), to(node2), draft(true) {
     if (from == to || !node1 || !node2) {
         throw Link::WrongNode();
     } else {
