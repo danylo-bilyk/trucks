@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Trucks</string>
+   <string>Диспетчеризація</string>
   </property>
   <property name="windowIcon">
    <iconset resource="trucks.qrc">
