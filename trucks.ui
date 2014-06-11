@@ -12,8 +12,8 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>1280</width>
-    <height>738</height>
+    <width>800</width>
+    <height>600</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -83,7 +83,7 @@
            </size>
           </property>
           <property name="currentIndex">
-           <number>8</number>
+           <number>4</number>
           </property>
           <widget class="QWidget" name="modelPage">
            <property name="geometry">
@@ -91,7 +91,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>342</height>
+             <height>204</height>
             </rect>
            </property>
            <attribute name="label">
@@ -267,7 +267,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>342</height>
+             <height>204</height>
             </rect>
            </property>
            <attribute name="label">
@@ -435,7 +435,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>342</height>
+             <height>204</height>
             </rect>
            </property>
            <attribute name="label">
@@ -795,7 +795,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>342</height>
+             <height>204</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1179,7 +1179,7 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>330</y>
+              <y>245</y>
               <width>280</width>
               <height>20</height>
              </rect>
@@ -1192,7 +1192,7 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>350</y>
+              <y>265</y>
               <width>281</width>
               <height>30</height>
              </rect>
@@ -1211,7 +1211,7 @@
               <x>10</x>
               <y>130</y>
               <width>280</width>
-              <height>81</height>
+              <height>61</height>
              </rect>
             </property>
             <property name="title">
@@ -1222,7 +1222,7 @@
               <rect>
                <x>10</x>
                <y>30</y>
-               <width>120</width>
+               <width>60</width>
                <height>17</height>
               </rect>
              </property>
@@ -1233,9 +1233,9 @@
             <widget class="QTimeEdit" name="timeEdit">
              <property name="geometry">
               <rect>
-               <x>10</x>
-               <y>50</y>
-               <width>100</width>
+               <x>70</x>
+               <y>26</y>
+               <width>70</width>
                <height>27</height>
               </rect>
              </property>
@@ -1255,20 +1255,20 @@
               <rect>
                <x>150</x>
                <y>30</y>
-               <width>120</width>
+               <width>60</width>
                <height>17</height>
               </rect>
              </property>
              <property name="text">
-              <string>Кінец</string>
+              <string>Кінець</string>
              </property>
             </widget>
             <widget class="QTimeEdit" name="timeEdit_2">
              <property name="geometry">
               <rect>
-               <x>150</x>
-               <y>50</y>
-               <width>100</width>
+               <x>210</x>
+               <y>26</y>
+               <width>70</width>
                <height>27</height>
               </rect>
              </property>
@@ -1288,9 +1288,9 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>230</y>
+              <y>190</y>
               <width>280</width>
-              <height>81</height>
+              <height>61</height>
              </rect>
             </property>
             <property name="title">
@@ -1301,7 +1301,7 @@
               <rect>
                <x>10</x>
                <y>30</y>
-               <width>120</width>
+               <width>60</width>
                <height>17</height>
               </rect>
              </property>
@@ -1312,9 +1312,9 @@
             <widget class="QTimeEdit" name="timeEdit_3">
              <property name="geometry">
               <rect>
-               <x>10</x>
-               <y>50</y>
-               <width>100</width>
+               <x>70</x>
+               <y>26</y>
+               <width>70</width>
                <height>27</height>
               </rect>
              </property>
@@ -1334,20 +1334,20 @@
               <rect>
                <x>150</x>
                <y>30</y>
-               <width>120</width>
+               <width>60</width>
                <height>17</height>
               </rect>
              </property>
              <property name="text">
-              <string>Кінец</string>
+              <string>Кінець</string>
              </property>
             </widget>
             <widget class="QTimeEdit" name="timeEdit_4">
              <property name="geometry">
               <rect>
-               <x>150</x>
-               <y>50</y>
-               <width>100</width>
+               <x>210</x>
+               <y>26</y>
+               <width>70</width>
                <height>27</height>
               </rect>
              </property>
@@ -1367,7 +1367,7 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>385</y>
+              <y>300</y>
               <width>280</width>
               <height>30</height>
              </rect>
@@ -1493,7 +1493,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>342</height>
+             <height>204</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1677,7 +1677,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>342</height>
+             <height>204</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1832,7 +1832,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>342</height>
+             <height>204</height>
             </rect>
            </property>
            <attribute name="label">
@@ -2160,7 +2160,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>342</height>
+             <height>204</height>
             </rect>
            </property>
            <attribute name="label">
