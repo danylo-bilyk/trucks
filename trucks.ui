@@ -1198,7 +1198,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Перейти до симуляції</string>
+             <string>Розрахувати розклад</string>
             </property>
             <property name="icon">
              <iconset resource="trucks.qrc">
