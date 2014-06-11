@@ -83,7 +83,7 @@
            </size>
           </property>
           <property name="currentIndex">
-           <number>5</number>
+           <number>8</number>
           </property>
           <widget class="QWidget" name="modelPage">
            <property name="geometry">
@@ -1825,25 +1825,6 @@
              <bool>true</bool>
             </property>
            </widget>
-           <widget class="QCheckBox" name="checkBox_14">
-            <property name="geometry">
-             <rect>
-              <x>20</x>
-              <y>90</y>
-              <width>120</width>
-              <height>22</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>ПН2</string>
-            </property>
-            <property name="checkable">
-             <bool>false</bool>
-            </property>
-            <property name="checked">
-             <bool>false</bool>
-            </property>
-           </widget>
           </widget>
           <widget class="QWidget" name="page_3">
            <property name="geometry">
@@ -2076,22 +2057,6 @@
              <bool>false</bool>
             </property>
            </widget>
-           <widget class="QCheckBox" name="checkBox_26">
-            <property name="geometry">
-             <rect>
-              <x>150</x>
-              <y>120</y>
-              <width>120</width>
-              <height>22</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>Самоскид 6</string>
-            </property>
-            <property name="checked">
-             <bool>false</bool>
-            </property>
-           </widget>
            <widget class="QLineEdit" name="lineEdit_8">
             <property name="geometry">
              <rect>
@@ -2185,7 +2150,7 @@
              </font>
             </property>
             <property name="text">
-             <string>1: пр1-м4-м1-пн1-м1-м2-м4-пр1</string>
+             <string>1: ПР1=М11=М10=М7=М4-М3-М2-М1=ПН1=М1-М2-М3-М4=М7=М10=М11</string>
             </property>
            </widget>
           </widget>
