@@ -186,27 +186,51 @@ void TrucksGraphicView::toggleDoubleRoadAddMode(bool toggle) {
 void TrucksGraphicView::initScene() {
     scene = new Scene();
     setScene(scene);
-    scene->setSceneRect(0, 0, width(), height());
+    scene->setSceneRect(0, 0, 525, 375);
 
-    NodePtr pr1 = scene->createNode(QPointF(250, 0), STORAGE);
-    NodePtr pr2 = scene->createNode(QPointF(250, 150), MINEDUMP);
-    NodePtr m1 = scene->createNode(QPointF(-50, -150), INTERCHANGE);
-    NodePtr m2 = scene->createNode(QPointF(-50, 0), INTERCHANGE);
-    NodePtr m3 = scene->createNode(QPointF(100, 150), INTERCHANGE);
-    NodePtr m4 = scene->createNode(QPointF(100, 0), INTERCHANGE);
-    NodePtr pn1 = scene->createNode(QPointF(-200, -150), MINEDUMP);
-    NodePtr pn2 = scene->createNode(QPointF(-200, 0), MINEDUMP);
+    NodePtr pn1 = scene->createNode(QPoint(0, 200), MINEDUMP);
 
+    NodePtr m1 = scene->createNode(QPoint(0,100), INTERCHANGE);
+    NodePtr m2 = scene->createNode(QPoint(0,0), INTERCHANGE);
+    NodePtr m3 = scene->createNode(QPoint(100,0), INTERCHANGE);
+    NodePtr m4 = scene->createNode(QPoint(250, 50), INTERCHANGE);
+    NodePtr m5 = scene->createNode(QPoint(425, 75), INTERCHANGE);
+    NodePtr m6 = scene->createNode(QPoint(400, 200), INTERCHANGE);
+    NodePtr m7 = scene->createNode(QPoint(200, 125), INTERCHANGE);
+    NodePtr m8 = scene->createNode(QPoint(300, 200), INTERCHANGE);
+    NodePtr m9 = scene->createNode(QPoint(400, 275), INTERCHANGE);
+    NodePtr m10 = scene->createNode(QPoint(200, 275), INTERCHANGE);
+    NodePtr m11 = scene->createNode(QPoint(200, 350), INTERCHANGE);
 
-    scene->createLink(pn1, m1);
-    scene->createLink(pn2, m2);
-    scene->createLink(m1, m4);
+    NodePtr pr0 = scene->createNode(QPoint(100, 275), STORAGE);
+    NodePtr pr1 = scene->createNode(QPoint(100, 350), STORAGE);
+    NodePtr pr2 = scene->createNode(QPoint(500, 235), STORAGE);
+
     scene->createLink(m1, m2);
-    scene->createLink(m2, m4);
     scene->createLink(m2, m3);
-    scene->createLink(m4, m3);
-    scene->createLink(m4, pr1);
-    scene->createLink(m3, pr2);
+    scene->createLink(m3, m4);
+
+    scene->createDoubleLink(pn1, m1);
+
+    scene->createDoubleLink(pr0, m10);
+    scene->createDoubleLink(pr1, m11);
+    scene->createDoubleLink(pr2, m5);
+    scene->createDoubleLink(pr2, m6);
+    scene->createDoubleLink(pr2, m9);
+
+    scene->createDoubleLink(m4, m5);
+    scene->createDoubleLink(m4, m7);
+
+    scene->createDoubleLink(m6, m5);
+    scene->createDoubleLink(m6, m8);
+    scene->createDoubleLink(m6, m9);
+
+    scene->createLink(m7, m8);
+    scene->createDoubleLink(m7, m10);
+
+    scene->createDoubleLink(m10, m8);
+    scene->createDoubleLink(m10, m9);
+    scene->createDoubleLink(m10, m11);
 }
 
 void TrucksGraphicView::freeScene() {
