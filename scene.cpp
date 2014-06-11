@@ -76,6 +76,18 @@ void Scene::cancelLinkCreation() {
     }
 }
 
+LinkPtr Scene::createDoubleLink(Node *startNode, Node *endNode)
+{
+    is_dirty = true;
+
+    Link    *link = new Link(startNode, endNode, Link::DOUBLE_LINK);
+    link->setZValue(0.0);
+
+    addItem(link);
+
+    return (link);
+}
+
 void Scene::startLinkCreation(QGraphicsItem *obj, QPointF pt) {
     startNode = dynamic_cast<NodePtr> (obj);
 

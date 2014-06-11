@@ -3,7 +3,9 @@
 #include "link.h"
 
 namespace   my {
-Link::Link(Node *node1, Node *node2, LinkType /*linkType*/) : QGraphicsLineItem(), from(node1), to(node2), draft(true) {
+Link::Link(Node *node1, Node *node2, LinkType linkType /*= SINGLE_LINK*/)
+    : QGraphicsLineItem(), from(node1), to(node2), type(linkType), draft(true)
+{
     if (from == to || !node1 || !node2) {
         throw Link::WrongNode();
     } else {
@@ -12,30 +14,60 @@ Link::Link(Node *node1, Node *node2, LinkType /*linkType*/) : QGraphicsLineItem(
     }
 
     pen = new QPen();
+    pen2 = new QPen();
 
     setFlag(ItemIsSelectable);
 
     setAcceptHoverEvents(true);
+
+
+
+    pen2->setWidth(12);
+    pen2->setColor(Qt::black);
+
+    if (type == SINGLE_LINK) {
+        pen->setWidth(5);
+
+        setPen(*pen);
+
+        pen->setStyle(Qt::SolidLine);
+        pen2->setStyle(Qt::NoPen);
+    } else {
+        setPen(*pen2);
+
+        pen->setWidth(2);
+
+        pen->setStyle(Qt::DashLine);
+        pen2->setStyle(Qt::SolidLine);
+    }
 }
 
 Link::~Link() {
     delete pen;
+    delete pen2;
+}
+
+void Link::setupMajorPenColor()
+{
+    if (type == SINGLE_LINK) {
+        if (isSelected()) {
+            pen->setColor(Qt::red);
+        } else {
+            pen->setColor(Qt::black);
+        }
+    } else {
+        if (isSelected()) {
+            pen->setColor(Qt::yellow);
+        } else {
+            pen->setColor(Qt::white);
+        }
+    }
 }
 
 void Link::paint(QPainter *painter, const QStyleOptionGraphicsItem */*option*/, QWidget */*widget*/) {
     painter->setRenderHint(QPainter::HighQualityAntialiasing, true);
 
-    if (isSelected()) {
-        pen->setColor(Qt::red);
-    } else {
-        pen->setColor(Qt::black);
-    }
-
-    pen->setWidthF(4);
-    painter->setPen(*pen);
-
-    QBrush  brush(Qt::NoBrush);
-    painter->setBrush(brush);
+    setupMajorPenColor();
 
     const QPointF   &nodeCenterOffset = Node::getCenter();
     float           radius = (QLineF(0, 0, nodeCenterOffset.x(), 0).length());
@@ -66,6 +98,11 @@ void Link::paint(QPainter *painter, const QStyleOptionGraphicsItem */*option*/, 
         return;
     }
 
+    painter->setPen(*pen2);
+    painter->drawLine(line());
+
+
+    painter->setPen(*pen);
     painter->drawLine(line());
 }
 

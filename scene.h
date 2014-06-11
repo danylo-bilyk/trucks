@@ -22,6 +22,7 @@ class Scene : public QGraphicsScene {
         LinkPtr endLinkCreation(QGraphicsItem *obj);
 
         LinkPtr         createLink(Node *startNode, Node *endNode);
+        LinkPtr         createDoubleLink(Node *startNode, Node *endNode);
     protected:
 
 

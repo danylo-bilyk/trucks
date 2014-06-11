@@ -8,9 +8,9 @@ namespace   my {
 class Link : public QGraphicsLineItem {
 
     public:
-        typedef enum {SINGLE, DOUBLE} LinkType;
+        typedef enum {SINGLE_LINK, DOUBLE_LINK} LinkType;
 
-        Link(NodePtr, NodePtr, LinkType linkType = SINGLE);
+        Link(NodePtr, NodePtr, LinkType linkType = SINGLE_LINK);
         ~       Link();
 
         void    setBegin(NodePtr node, bool create = true);
@@ -24,12 +24,17 @@ class Link : public QGraphicsLineItem {
         NodePtr from;
         NodePtr to;
 
+        LinkType type;
+
         QPen    *pen;
+        QPen    *pen2;
+
         bool    draft;
 
     public:
         class WrongNode : public std::exception
         { };
+        void setupMajorPenColor();
 };
 }
 
