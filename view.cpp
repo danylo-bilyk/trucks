@@ -188,23 +188,23 @@ void TrucksGraphicView::initScene() {
     setScene(scene);
     scene->setSceneRect(0, 0, 525, 375);
 
-    NodePtr pn1 = scene->createNode(QPoint(0, 200), MINEDUMP);
+    NodePtr pn1 = scene->createNode(QPoint(-100, 250), MINEDUMP);
 
-    NodePtr m1 = scene->createNode(QPoint(0,100), INTERCHANGE);
-    NodePtr m2 = scene->createNode(QPoint(0,0), INTERCHANGE);
-    NodePtr m3 = scene->createNode(QPoint(100,0), INTERCHANGE);
-    NodePtr m4 = scene->createNode(QPoint(250, 50), INTERCHANGE);
-    NodePtr m5 = scene->createNode(QPoint(425, 75), INTERCHANGE);
-    NodePtr m6 = scene->createNode(QPoint(400, 200), INTERCHANGE);
-    NodePtr m7 = scene->createNode(QPoint(200, 125), INTERCHANGE);
-    NodePtr m8 = scene->createNode(QPoint(300, 200), INTERCHANGE);
-    NodePtr m9 = scene->createNode(QPoint(400, 275), INTERCHANGE);
-    NodePtr m10 = scene->createNode(QPoint(200, 275), INTERCHANGE);
-    NodePtr m11 = scene->createNode(QPoint(200, 350), INTERCHANGE);
+    NodePtr m1 = scene->createNode(QPoint(-100,150), INTERCHANGE);
+    NodePtr m2 = scene->createNode(QPoint(-100,50), INTERCHANGE);
+    NodePtr m3 = scene->createNode(QPoint(100,50), INTERCHANGE);
+    NodePtr m4 = scene->createNode(QPoint(350, 50), INTERCHANGE);
+    NodePtr m5 = scene->createNode(QPoint(525, 75), INTERCHANGE);
+    NodePtr m6 = scene->createNode(QPoint(500, 200), INTERCHANGE);
+    NodePtr m7 = scene->createNode(QPoint(300, 125), INTERCHANGE);
+    NodePtr m8 = scene->createNode(QPoint(400, 200), INTERCHANGE);
+    NodePtr m9 = scene->createNode(QPoint(500, 275), INTERCHANGE);
+    NodePtr m10 = scene->createNode(QPoint(300, 275), INTERCHANGE);
+    NodePtr m11 = scene->createNode(QPoint(150, 275), INTERCHANGE);
 
-    NodePtr pr0 = scene->createNode(QPoint(100, 275), STORAGE);
-    NodePtr pr1 = scene->createNode(QPoint(100, 350), STORAGE);
-    NodePtr pr2 = scene->createNode(QPoint(500, 235), STORAGE);
+    NodePtr pr0 = scene->createNode(QPoint(225, 200), STORAGE);
+    NodePtr pr1 = scene->createNode(QPoint(75, 200), STORAGE);
+    NodePtr pr2 = scene->createNode(QPoint(650, 200), STORAGE);
 
     scene->createLink(m1, m2);
     scene->createLink(m2, m3);
