@@ -83,7 +83,7 @@
            </size>
           </property>
           <property name="currentIndex">
-           <number>8</number>
+           <number>5</number>
           </property>
           <widget class="QWidget" name="modelPage">
            <property name="geometry">
@@ -377,7 +377,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>1: пр1-м4-м1-пн1-м1-м2-м4-пр1</string>
+             <string>1: ПР1=М11=М10=М7=М4-М3-М2-М1=ПН1=М1-М2-М3-М4=М7=М10=М11</string>
             </property>
            </widget>
            <widget class="QCheckBox" name="checkBox_8">
@@ -390,20 +390,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>2: пр1-м4-м2-пн2-м2-м1-м4-пр1</string>
-            </property>
-           </widget>
-           <widget class="QCheckBox" name="checkBox_9">
-            <property name="geometry">
-             <rect>
-              <x>20</x>
-              <y>120</y>
-              <width>250</width>
-              <height>22</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>3: пр1-м4-м3-пн3-м3-м2-м4-пр1</string>
+             <string>2: ПР2=М6=М5=М4-М3-М2-М1=ПН1=М1-М2-М3-М4=М5</string>
             </property>
            </widget>
            <widget class="QLabel" name="label_39">
@@ -435,7 +422,7 @@
              </font>
             </property>
             <property name="text">
-             <string>3</string>
+             <string>2</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -468,27 +455,22 @@
             </property>
             <item>
              <property name="text">
-              <string>ПН2</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>M1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>M4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>ПР1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
               <string>ПР2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>М6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>M5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>М4</string>
              </property>
             </item>
            </widget>
@@ -505,11 +487,11 @@
              <bool>false</bool>
             </property>
             <property name="currentText">
-             <string>1: пр1-м4-м1-пн1-</string>
+             <string>2: ПР2=М6=М5=М4-</string>
             </property>
             <item>
              <property name="text">
-              <string>1: пр1-м4-м1-пн1-</string>
+              <string>2: ПР2=М6=М5=М4-</string>
              </property>
             </item>
             <item>
@@ -550,37 +532,7 @@
             </property>
             <item>
              <property name="text">
-              <string>ПР1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>M4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>M1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>ПН1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>M1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>M4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>ПР1</string>
+              <string>M3</string>
              </property>
             </item>
            </widget>
@@ -926,21 +878,19 @@
              <bool>false</bool>
             </property>
             <property name="currentText">
-             <string>1: пр1-м4-м1-пн1-м1-м2-м4-пр1</string>
+             <string>2: ПР2=М6=М5=М4-М3-М2-М1=ПН1=М1-М2-М3-М4=М5</string>
+            </property>
+            <property name="currentIndex">
+             <number>1</number>
             </property>
             <item>
              <property name="text">
-              <string>1: пр1-м4-м1-пн1-м1-м2-м4-пр1</string>
+              <string>1: ПР1=М11=М10=М7=М4-М3-М2-М1=ПН1=М1-М2-М3-М4=М7=М10=М11</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>2: пр1-м4-м2-пн2-м2-м1-м4-пр1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>3: пр1-м4-м3-пн3-м3-м2-м4-пр1</string>
+              <string>2: ПР2=М6=М5=М4-М3-М2-М1=ПН1=М1-М2-М3-М4=М5</string>
              </property>
             </item>
            </widget>
@@ -1002,6 +952,9 @@
             <property name="text">
              <string>Самоскид 4</string>
             </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
            </widget>
            <widget class="QListView" name="listView_7">
             <property name="geometry">
@@ -1061,22 +1014,6 @@
              <bool>false</bool>
             </property>
            </widget>
-           <widget class="QCheckBox" name="checkBox_24">
-            <property name="geometry">
-             <rect>
-              <x>150</x>
-              <y>140</y>
-              <width>120</width>
-              <height>22</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>Самоскид 6</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
-            </property>
-           </widget>
            <widget class="QLabel" name="label_29">
             <property name="geometry">
              <rect>
@@ -1100,7 +1037,7 @@
              </rect>
             </property>
             <property name="value">
-             <number>6</number>
+             <number>5</number>
             </property>
            </widget>
            <widget class="QLabel" name="label_30">
@@ -1126,7 +1063,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>Обрано ТЗ на маршрута 1:</string>
+             <string>Обрано ТЗ на маршрута 2:</string>
             </property>
            </widget>
            <widget class="QLabel" name="label_32">
@@ -1155,7 +1092,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>6</string>
+             <string>5</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1216,7 +1153,6 @@
            <zorder>checkBox_21</zorder>
            <zorder>checkBox_22</zorder>
            <zorder>checkBox_23</zorder>
-           <zorder>checkBox_24</zorder>
            <zorder>label_29</zorder>
            <zorder>spinBox_13</zorder>
            <zorder>label_30</zorder>
@@ -1308,7 +1244,7 @@
              </property>
              <property name="time">
               <time>
-               <hour>0</hour>
+               <hour>8</hour>
                <minute>0</minute>
                <second>0</second>
               </time>
@@ -1341,7 +1277,7 @@
              </property>
              <property name="time">
               <time>
-               <hour>17</hour>
+               <hour>20</hour>
                <minute>0</minute>
                <second>0</second>
               </time>
@@ -1420,8 +1356,8 @@
              </property>
              <property name="time">
               <time>
-               <hour>13</hour>
-               <minute>0</minute>
+               <hour>12</hour>
+               <minute>45</minute>
                <second>0</second>
               </time>
              </property>
@@ -1469,6 +1405,9 @@
             <property name="text">
              <string>Самоскид 1</string>
             </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
            </widget>
            <widget class="QCheckBox" name="checkBox_2">
             <property name="geometry">
@@ -1497,19 +1436,6 @@
             </property>
             <property name="text">
              <string>Самоскид 3</string>
-            </property>
-           </widget>
-           <widget class="QCheckBox" name="checkBox_4">
-            <property name="geometry">
-             <rect>
-              <x>150</x>
-              <y>90</y>
-              <width>120</width>
-              <height>22</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>Самоскид 6</string>
             </property>
             <property name="checked">
              <bool>true</bool>
@@ -1542,6 +1468,9 @@
             </property>
             <property name="text">
              <string>Самоскид 4</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
             </property>
            </widget>
            <widget class="QLabel" name="label_10">
