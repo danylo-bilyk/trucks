@@ -18,8 +18,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>1280</width>
-    <height>738</height>
+    <width>16777215</width>
+    <height>16777215</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -2311,8 +2311,8 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>9999</width>
-                <height>250</height>
+                <width>16777215</width>
+                <height>260</height>
                </size>
               </property>
               <property name="verticalScrollBarPolicy">
@@ -2356,8 +2356,8 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>317</width>
-                <height>250</height>
+                <width>16777215</width>
+                <height>260</height>
                </size>
               </property>
               <property name="verticalScrollBarPolicy">
@@ -2404,8 +2404,8 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>325</width>
-                <height>250</height>
+                <width>330</width>
+                <height>260</height>
                </size>
               </property>
               <property name="verticalScrollBarPolicy">
