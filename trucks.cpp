@@ -13,6 +13,8 @@ Trucks::Trucks(QWidget *parent) : QMainWindow(parent) {
         }
     }
 
+    ui.properties->hide();
+    ui.propertiesLabel->hide();
 
     QGraphicsPixmapItem* item1 = new QGraphicsPixmapItem(QPixmap(":/images/Resources/table.png"));
     QGraphicsScene* scene = new QGraphicsScene();

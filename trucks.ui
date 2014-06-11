@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>989</width>
-    <height>964</height>
+    <width>1280</width>
+    <height>738</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>738</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>16777215</width>
-    <height>16777215</height>
+    <width>1280</width>
+    <height>738</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -91,7 +91,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -267,7 +267,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -448,7 +448,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -843,7 +843,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1233,7 +1233,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1564,7 +1564,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1748,7 +1748,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -1922,7 +1922,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -2266,7 +2266,7 @@
              <x>0</x>
              <y>0</y>
              <width>320</width>
-             <height>568</height>
+             <height>342</height>
             </rect>
            </property>
            <attribute name="label">
@@ -2345,6 +2345,9 @@
         </item>
         <item>
          <layout class="QHBoxLayout" name="scheduleLayout">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMinimumSize</enum>
+          </property>
           <item>
            <layout class="QVBoxLayout" name="anotherDiagramLayout">
             <property name="sizeConstraint">
@@ -2373,15 +2376,18 @@
              <widget class="QGraphicsView" name="graphicsView_3">
               <property name="minimumSize">
                <size>
-                <width>300</width>
-                <height>100</height>
+                <width>50</width>
+                <height>250</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>300</width>
-                <height>400</height>
+                <width>9999</width>
+                <height>250</height>
                </size>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
               </property>
              </widget>
             </item>
@@ -2413,11 +2419,23 @@
             </item>
             <item>
              <widget class="QGraphicsView" name="graphicsView">
+              <property name="minimumSize">
+               <size>
+                <width>307</width>
+                <height>250</height>
+               </size>
+              </property>
               <property name="maximumSize">
                <size>
-                <width>16777215</width>
-                <height>400</height>
+                <width>317</width>
+                <height>250</height>
                </size>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
               </property>
              </widget>
             </item>
@@ -2449,11 +2467,23 @@
             </item>
             <item>
              <widget class="QGraphicsView" name="graphicsView_2">
+              <property name="minimumSize">
+               <size>
+                <width>315</width>
+                <height>250</height>
+               </size>
+              </property>
               <property name="maximumSize">
                <size>
-                <width>16777215</width>
-                <height>400</height>
+                <width>325</width>
+                <height>250</height>
                </size>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
               </property>
              </widget>
             </item>
@@ -2472,7 +2502,7 @@
          <enum>QLayout::SetMinimumSize</enum>
         </property>
         <item>
-         <widget class="QLabel" name="label_3">
+         <widget class="QLabel" name="propertiesLabel">
           <property name="text">
            <string>Свойства</string>
           </property>
@@ -2508,7 +2538,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>989</width>
+     <width>1280</width>
      <height>25</height>
     </rect>
    </property>
