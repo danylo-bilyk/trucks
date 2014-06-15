@@ -1,18 +1,17 @@
 <RCC>
-    <qresource prefix="/Trucks"/>
     <qresource prefix="/name" lang="en"/>
     <qresource prefix="/name_ru" lang="ru"/>
     <qresource prefix="/images">
-        <file>Resources/images/dump.png</file>
-        <file>Resources/images/truck.png</file>
-        <file>Resources/images/parking.png</file>
-        <file>Resources/images/mine.png</file>
+        <file>resources/images/dump.png</file>
+        <file>resources/images/truck.png</file>
+        <file>resources/images/parking.png</file>
+        <file>resources/images/mine.png</file>
         <file>images/imagefiles-winding-_road.png</file>
-        <file>Resources/images/circle-outline-64.png</file>
-        <file>Resources/images/time-64.png</file>
-        <file>Resources/Gantt.png</file>
-        <file>Resources/DispDiagr.png</file>
-        <file>Resources/table.png</file>
+        <file>resources/images/circle-outline-64.png</file>
+        <file>resources/images/time-64.png</file>
+        <file>resources/Gantt.png</file>
+        <file>resources/DispDiagr.png</file>
+        <file>resources/table.png</file>
     </qresource>
     <qresource prefix="/icons_actions">
         <file>images/tango_icons/22x22/actions/address-book-new.png</file>
